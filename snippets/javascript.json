@@ -1,4 +1,19 @@
 {
+    "logger": {
+        "prefix": "-logger",
+        "body": [
+            " logger({",
+            "    name: \"${1:Variable}\",",
+            "    value: ${1:Variable},",
+            "    path: '$RELATIVE_FILEPATH',",
+            "    line: '$TM_LINE_NUMBER',",
+            "    date: '${CURRENT_YEAR}-${CURRENT_MONTH_NAME}-${CURRENT_DATE}',",
+            "    time: '${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}',",
+            "    comment: `${2:comment}`",
+            "})"
+        ],
+        "description": "Logger full"
+    },
 	"console-log-advanced": {
 		"prefix": "-log",
 		"body": [
@@ -26,7 +41,7 @@
 	"path ": {
 		"prefix": "-path",
 		"body": [
-			"path: '$TM_FILEPATH'"
+			"path: '$RELATIVE_FILEPATH'"
 		],
 		"description": "Path"
 	},
@@ -40,7 +55,7 @@
 	"comment ": {
 		"prefix": "-comment",
 		"body": [
-			"`${2:comment}`"
+			"comment: `${1:comment}`"
 		],
 		"description": "comment"
 	}
