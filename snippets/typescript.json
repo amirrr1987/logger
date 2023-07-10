@@ -1,0 +1,47 @@
+{
+	"console-log-advanced": {
+		"prefix": "-log",
+		"body": [
+			"logger({",
+			"  name: \"${1:Variable}\",",
+			"  value: ${1:Variable},",	
+			"})"
+		],
+		"description": "Console Log Advanced"
+	},
+	"date ": {
+		"prefix": "-date",
+		"body": [
+			"date: '${CURRENT_YEAR}-${CURRENT_MONTH_NAME}-${CURRENT_DATE}'"
+		],
+		"description": "Date"
+	},
+	"time ": {
+		"prefix": "-time",
+		"body": [
+			"time: '${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}'"
+		],
+		"description": "Time"
+	},
+	"path ": {
+		"prefix": "-path",
+		"body": [
+			"path: '$TM_FILEPATH'"
+		],
+		"description": "Path"
+	},
+	"line ": {
+		"prefix": "-line",
+		"body": [
+			"line: '$TM_LINE_NUMBER'"
+		],
+		"description": "Line"
+	},
+	"comment ": {
+		"prefix": "-comment",
+		"body": [
+			"`${2:comment}`"
+		],
+		"description": "comment"
+	}
+}

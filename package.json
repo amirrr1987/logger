@@ -1,0 +1,30 @@
+{
+  "name": "logger",
+  "displayName": "Logger",
+  "description": "Logger plugin for Console Log Advanced npm package",
+  "version": "1.0.0",
+  "publisher": "Amir maghami",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amirrr1987/logger.git"
+  },
+  "icon": "console.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+	"categories": [
+		"Other"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/typescript.json"
+			}
+		]
+	}
+}
