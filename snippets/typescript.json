@@ -2,7 +2,7 @@
     "logger": {
         "prefix": "-logger",
         "body": [
-            " logger({",
+            " clg.logger({",
             "    name: \"${1:Variable}\",",
             "    value: ${1:Variable},",
             "    path: '$RELATIVE_FILEPATH',",
@@ -17,7 +17,7 @@
 	"console-log-advanced": {
 		"prefix": "-log",
 		"body": [
-			"logger({",
+			"clg.logger({",
 			"  name: \"${1:Variable}\",",
 			"  value: ${1:Variable},",	
 			"})"
@@ -44,6 +44,13 @@
 			"path: '$RELATIVE_FILEPATH'"
 		],
 		"description": "Path"
+	},
+	"collapsed ": {
+		"prefix": "-collapsed",
+		"body": [
+			"collapsed: `${1:collapsed}`"
+		],
+		"description": "Collapsed"
 	},
 	"line ": {
 		"prefix": "-line",
