@@ -1,9 +1,9 @@
 {
-  "name": "logger",
-  "displayName": "Logger",
+  "name": "logger-for-console-log-advanced",
+  "displayName": "Logger: console-log-advanced",
   "description": "Logger plugin for Console Log Advanced npm package",
-  "version": "1.0.0",
-  "publisher": "Amir maghami",
+  "version": "0.1.0",
+  "publisher": "amirrr1987",
   "repository": {
     "type": "git",
     "url": "https://github.com/amirrr1987/logger.git"
